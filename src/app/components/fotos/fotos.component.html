@@ -1,0 +1,13 @@
+<div class="card-deck">
+
+  <div class="card" *ngFor="let imagen of imagenes | async">
+    <img [src]="imagen.url" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{ imagen.nombre }}</h5>
+     
+      <p class="card-text"><small class="text-muted">{{ imagen.date | date }}</small></p>
+    </div>
+
+  </div>
+
+  
